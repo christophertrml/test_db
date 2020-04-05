@@ -1,11 +1,22 @@
 table test_table:
   columns:
   - id:
-      default: nextval('public.test_table_id_seq'::regclass)
       not_null: true
       type: integer
   - test:
       type: text
+  - some_new_column:
+      not_null: true
+      type: integer
+  foreign_keys:
+    test_table_foo_bar_foo_bar_id_fk:
+      columns:
+      - some_new_column
+      references:
+        columns:
+        - foo_bar_id
+        schema: public
+        table: foo_bar
   indexes:
     test_table_id_uindex:
       keys:

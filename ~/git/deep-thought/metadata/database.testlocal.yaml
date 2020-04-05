@@ -1,5 +1,6 @@
 extension plpgsql: extension.yaml
 schema public:
   schema: schema.public.yaml
-  sequence test_table_id_seq: schema.public/sequence.test_table_id_seq.yaml
+  sequence foo_bar_foo_bar_id_seq: schema.public/sequence.foo_bar_foo_bar_id_seq.yaml
+  table foo_bar: schema.public/table.foo_bar.yaml
   table test_table: schema.public/table.test_table.yaml

@@ -1,0 +1,11 @@
+table foo_bar:
+  columns:
+  - foo_bar_id:
+      default: nextval('public.foo_bar_foo_bar_id_seq'::regclass)
+      not_null: true
+      type: integer
+  owner: safegraph
+  primary_key:
+    foo_bar_pk:
+      columns:
+      - foo_bar_id

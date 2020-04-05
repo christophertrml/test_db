@@ -1,0 +1,8 @@
+schema public:
+  description: standard public schema
+  owner: safegraph
+  privileges:
+  - PUBLIC:
+    - all
+  - safegraph:
+    - all

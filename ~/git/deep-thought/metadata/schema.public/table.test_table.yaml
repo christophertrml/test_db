@@ -1,0 +1,18 @@
+table test_table:
+  columns:
+  - id:
+      default: nextval('public.test_table_id_seq'::regclass)
+      not_null: true
+      type: integer
+  - test:
+      type: text
+  indexes:
+    test_table_id_uindex:
+      keys:
+      - id
+      unique: true
+  owner: safegraph
+  primary_key:
+    test_table_pk:
+      columns:
+      - id

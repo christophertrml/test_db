@@ -1,0 +1,9 @@
+sequence test_table_id_seq:
+  cache_value: 1
+  increment_by: 1
+  max_value: null
+  min_value: null
+  owner: safegraph
+  owner_column: id
+  owner_table: test_table
+  start_value: 1
